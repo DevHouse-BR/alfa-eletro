@@ -1,0 +1,137 @@
+	<?xml version="1.0" encoding="utf-8"?>
+	<install type="module" version="1.5" client="site">
+    <name>Onlinedestek</name>
+    <author>Hasan Beydağı</author>
+    <creationDate>Feb 2009</creationDate>
+ 	<copyright>Hasan Beydağı</copyright>
+ 	<license>GNU/GPL</license>
+ 	<authorEmail>hasan@beydagi.net</authorEmail>
+ 	<authorUrl>www.beydagi.net</authorUrl>
+    <version>1.2</version>
+    <description>OD_ACIKLAMA</description>
+
+	<files>
+		<filename module="mod_onlinedestek">mod_onlinedestek.php</filename>
+        <filename>images/logo.gif</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename> 
+	</files>
+
+    <languages>
+    	<language tag="en-GB">language/en-GB/en-GB.mod_onlinedestek.ini</language>
+		<language tag="tr-TR">language/tr-TR/tr-TR.mod_onlinedestek.ini</language>
+    </languages>
+
+
+	<params>
+	    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	    <param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+	    </param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param name="kimlik" type="text" default="43BA6707A3BDC6B0" label="LABEL_MSN_UNIQ_ID" description=" " />
+	</params>
+	
+	<params group="advanced">
+ 	    <param name="tip" type="list" default="modul" label="LABEL_MODULETYPE" description="MODULETYPE">
+			<option value="modul">Modul</option>
+			<option value="dugme">Button</option>
+			<option value="icon">Icon</option>
+		</param>
+		<param name="en" type="text" default="300px" label="LABEL_MODUL_WIDTH" description="MODUL_WIDTH" />
+		<param name="boy" type="text" default="300px" label="LABEL_MODUL_HEIGHT" description="MODUL_HEIGHT" />
+		<param name="genislik" type="text" default="1px" label="LABEL_MODUL_BORDER" description="MODUL_BORDER" />	
+        <param name="bcolor" type="text" default="black" label="LABEL_MODUL_BORDER_COLOR" description="MODUL_BORDER_COLOR" />	
+
+		<param name="b_en" type="text" default="100" label="LABEL_BUTTON_WIDTH" description="BUTTON_WIDTH" />
+		<param name="b_backcolor" type="text" default="77ADCF" label="LABEL_BUTTON_LOWER_BACK_COLOR" description="BUTTON_LOWER_BACK_COLOR" />
+		<param name="b_altbackcolor" type="text" default="FFFFFF" label="LABEL_BUTTON_UPPER_BACK_COLOR" description="BUTTON_UPPER_BACK_COLOR" />	
+        <param name="b_foreColor" type="text" default="424542" label="LABEL_BUTTON_TEXT_COLOR" description="BUTTON_TEXT_COLOR" />	
+		
+		<param name="beforeyazi" type="textarea" default=" " label="LABEL_TEXT_BEFORE_ICON" cols="30" rows="5"  description="TEXT_BEFORE_ICON" />		
+		<param name="afteryazi" type="textarea" default=" " label="LABEL_TEXT_AFTER_ICON" cols="30" rows="5"  description="TEXT_AFTER_ICON" />			
+
+		<param name="ulke" type="list" default="en-GB" label="LABEL_COUNTRY_LANGUAGE" description="COUNTRY_LANGUAGE">
+			<option value="en-XA">Arabia/English</option>
+			<option value="es-AR">Argentina/Spanish</option>
+			<option value="en-AU">Australia/English</option>
+			<option value="de-AT">Austria/German</option>
+			<option value="nl-BE">Belgium/Dutch</option>
+			<option value="fr-BE">Belgium/French</option>
+			<option value="pt-BR">Brazil/Portuguese (Brazilian)</option>
+			<option value="bg-BG">Bulgaria/Bulgarian</option>
+			<option value="en-CA">Canada/English</option>
+			<option value="fr-CA">Canada/French</option>
+			<option value="es-CL">Chile/Spanish</option>
+			<option value="zh-CN">China/Chinese (Simplified)</option>
+			<option value="hr-HR">Croatia/Croatian</option>
+			<option value="cs-CZ">Czech Republic/Czech</option>
+			<option value="da-DK">Denmark/Danish</option>
+			<option value="et-EE">Estonia/Estonian</option>
+			<option value="fi-fi">Finland/Finnish</option>
+			<option value="fr-FR">France/French</option>
+			<option value="de-DE">Germany/German</option>
+			<option value="el-GR">Greece/Greek</option>
+			<option value="zh-HK">Hong Kong SAR/Chinese (Traditional)</option>
+			<option value="hu-HU">Hungary/Hungarian</option>
+			<option value="en-IN">India/English</option>
+			<option value="en-ID">Indonesia/English</option>
+			<option value="en-IE">Ireland/English</option>
+			<option value="it-IT">Italy/Italian</option>
+			<option value="ja-JP">Japan/Japanese</option>
+			<option value="ko-KR">Korea/Korean</option>
+			<option value="es-LA">Latam ROR/Spanish</option>
+			<option value="lv-LV">Latvia/Latvian</option>
+			<option value="lt-LT">Lithuania/Lithuanian</option>
+			<option value="en-MY">Malaysia/English</option>
+			<option value="es-MX">Mexico/Spanish</option>
+			<option value="nl-NL">Netherlands/Dutch</option>
+			<option value="en-NZ">New Zealand/English</option>
+			<option value="nb-NO">Norway/Norwegian (Bokmal)</option>
+			<option value="en-PH">Philippines/English</option>
+			<option value="pl-PL">Poland/Polish</option>
+			<option value="pt-PT">Portugal/Portuguese   </option>
+			<option value="ro-RO">Romania/Romanian</option>
+			<option value="ru-RU">Russia/Russian</option>
+			<option value="sr-latn-CS">Serbia/Serbian-Latin</option>
+			<option value="en-SG">Singapore/English</option>
+			<option value="sk-SK">Slovakia/Slovak</option>
+			<option value="sl-SI">Slovenia/Slovenian</option>
+			<option value="en-ZA">South Africa/English</option>
+			<option value="es-ES">Spain/Spanish</option>
+			<option value="sv-SE">Sweden/Swedish</option>
+			<option value="fr-CH">Switzerland/French</option>
+			<option value="de-CH">Switzerland/German</option>
+			<option value="zh-TW">Taiwan/Chinese (Traditional)</option>
+			<option value="th-TH">Thailand/Thai</option>
+			<option value="tr-TR">Turkey/Turkish</option>
+			<option value="en-GB">UK/English</option>
+			<option value="uk-UA">Ukraine/Ukrainian</option>
+			<option value="en-US">US/English</option>
+			<option value="es-US">US/Spanish</option>			
+		</param>
+		</params>			
+
+	<params group="other">		
+	    <param name="fore_color" type="text" default="333333" label="LABEL_MSG_TEXT_COLOR" description="MSG_TEXT_COLOR" />
+		<param name="back_color" type="text" default="E8F1F8" label="LABEL_MSG_BACKGROUD_COLOR" description="MSG_BACKGROUD_COLOR" />
+		<param name="link_color" type="text" default="333333" label="LABEL_MSG_LINK_COLOR" description="MSG_LINK_COLOR" />
+		<param name="border_color" type="text" default="AFD3EB" label="LABEL_MSG_BORDER_COLOR" description="MSG_BORDER_COLOR" />
+		<param name="button_forecolor" type="text" default="333333" label="LABEL_MSG_BUTTON_TEXT_COLOR" description="MSG_BUTTON_TEXT_COLOR" />
+		<param name="button_backcolor" type="text" default="EEF7FE" label="LABEL_MSG_BUTTON_BACKGROUD_COLOR" description="MSG_BUTTON_BACKGROUD_COLOR" />		
+		<param name="button_bordercolor" type="text" default="AFD3EB" label="LABEL_MSG_BUTTON_BORDER_COLOR" description="MSG_BUTTON_BORDER_COLOR" />			
+		<param name="button_disabledcolor" type="text" default="EEF7FE" label="LABEL_MSG_DISABLED_BUTTON_BACK_COLOR" description="MSG_DISABLED_BUTTON_BACK_COLOR" />
+		<param name="header_forecolor" type="text" default="0066A7" label="LABEL_MSG_HEADER_TEXT_COLOR" description="MSG_HEADER_TEXT_COLOR" />
+		<param name="header_backcolor" type="text" default="8EBBD8" label="LABEL_MSG_HEADER_BACK_COLOR" description="MSG_HEADER_BACK_COLOR" />
+		<param name="menu_forecolor" type="text" default="333333" label="LABEL_MSG_MENU_TEXT_COLOR" description="MSG_MENU_TEXT_COLOR" />
+		<param name="menu_backcolor" type="text" default="FFFFFF" label="LABEL_MSG_MENU_BACK_COLOR" description="MSG_MENU_BACK_COLOR" />
+		<param name="chat_forecolor" type="text" default="333333" label="LABEL_MSG_CHAT_TEXT_COLOR" description="MSG_CHAT_TEXT_COLOR" />
+		<param name="chat_backcolor" type="text" default="FFFFFF" label="LABEL_MSG_CHAT_BACK_COLOR" description="MSG_CHAT_BACK_COLOR" />
+		<param name="chat_disabledcolor" type="text" default="F6F6F6" label="LABEL_MSG_CHAT_DISABLED_COLOR" description="MSG_CHAT_DISABLED_COLOR" />
+		<param name="chat_errorcolor" type="text" default="760502" label="LABEL_MSG_CHAT_ERROR_COLOR" description="MSG_CHAT_ERROR_COLOR" />
+		<param name="chat_labelcolor" type="text" default="6E6C6C" label="LABEL_MSG_CHAT_NAME_COLOR" description="MSG_CHAT_NAME_COLOR" />									</params>
+
+</install>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>IceScroller</name>
+	<author>IceTheme</author>
+	<creationDate>May 2008</creationDate>
+	<copyright>Copyright (C) 2008 IceTheme</copyright>
+	<license>Copyrighted Commercial Software</license>
+	<authorEmail>webmaster@jsharing.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	<version>1.0</version>
+	<description>IceScroller Module is ONLY for IceTheme Club Members and can be used ONLY for IceTheme Templates</description>
+	
+	<files>
+		<filename module="mod_ice_scroller">mod_ice_scroller.php</filename>
+		<filename>mod_ice_scroller.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>js/</folder>		
+	</files>
+	
+	<params>
+		
+		<param name="icescroller_text" type="text" default="Latest Headlines" label="Pre Text" description="The text that is before the scroller" />
+			
+		<param name="icescroller_width" type="text" default="550" label="Scroller Width (px)" description="Enter the width for the Scroller " />
+		
+		<param name="icescroller_height" type="text" default="20" label="Scroller Height (px)" description="Enter the height for the Scroller " />
+		
+		<param name="icescroller_duration" type="text" default="3000" label="Animation Duration (ms)" description="How fast do you want a slide to be changed?" />
+		
+		<param name="icescroller_delay" type="text" default="3500" label="Animation Delay (ms)" description="How much do you want to wait until a slide can be changed?" />
+		
+		<param name="icescroller_interval" type="text" default="3000" label="Animation Interval" description="Animation Interval Speed" />
+		
+		
+		
+		
+		<param name="icescroller_transition" type="list" default="linea" label="Transition Effect" description="Select a Transmition Effect for changing Items">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		
+			
+			
+			<param name="icescroller_autoplay" type="list" default="1" label="AutoPlay" description="Do you want to enable autoplay so the slides can change automatically.">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			
+		<param name="icescroller_direction" type="list" default="h" label="Scroller Direction" description="How do you want the scroller to change the items?">
+				<option value="h">Horizontal</option>
+				<option value="v">Vertical</option>
+			</param>
+				
+		
+			
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+				
+		
+		<param name="catid" type="category" default="0" label="Category Items" description="Assign a Category to display Items" />
+
+		<param name="order" type="list" default="o_asc" label="Article Ordering" description="Select the order for Articles">
+			<option value="o_asc">Article Order</option>
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="h_dsc">Most Popular</option>			
+			<option value="random">Randomize</option>
+	  	</param>
+		
+		<param name="items" type="text" default="4" label="Number of Items" description="How many items do you want to display?" />
+
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Add a Suffix to IceCarousel Module" />
+		
+	</params>
+	
+	<params group="advanced">
+	
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

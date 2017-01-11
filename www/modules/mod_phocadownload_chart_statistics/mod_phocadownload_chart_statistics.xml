@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" group="" version="1.5.0">
+	<name>Phoca Download Chart Statistics Module</name>
+	<creationDate>05/11/2008</creationDate>
+	<author>Jan Pavelka (www.phoca.cz)</author>
+	<authorEmail>info@phoca.cz</authorEmail>
+	<authorUrl>www.phoca.cz</authorUrl>
+	<copyright>Jan Pavelka</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0 beta</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Phoca Download Chart Statistics Module - displays chart statistics of downloaded files</description>
+
+	<!-- Main File Copy Section -->
+	<files>
+		<filename module="mod_phocadownload_chart_statistics">index.html</filename>
+		<filename module="mod_phocadownload_chart_statistics">mod_phocadownload_chart_statistics.php</filename>
+		<filename module="mod_phocadownload_chart_statistics">mod_phocadownload_chart_statistics.xml</filename>
+		<filename module="mod_phocadownload_chart_statistics">assets/index.html</filename>
+		<filename module="mod_phocadownload_chart_statistics">tmpl/default.php</filename>
+		<filename module="mod_phocadownload_chart_statistics">tmpl/index.html</filename>
+	</files>
+
+	<!-- Language -->
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_phocadownload_chart_statistics.ini</language>
+	</languages>
+
+	<!-- Only Development - copy ./front, ./language, ./other to admin area -->
+	<files>
+		<filename>language/en-GB/en-GB.mod_phocadownload_chart_statistics.ini</filename>
+		<filename>other/install_xml.php</filename>
+	</files>
+	
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	
+		<param name="chart_type" type="list" default="p3" label="Chart Type" description="Chart Type DESC">			
+			<option value="p">Pie chart</option>
+			<option value="p3">Pie chart (3D)</option>
+			<option value="bhs">Bart chart (horizontal)</option>
+			<option value="bvs">Bart chart (vertical)</option>
+			<option value="v">Venn diagrams</option>
+			<option value="gom">Google-o-meter</option>
+		</param>
+		
+		<param name="chart_width" default="300" size="10" type="text" label="Chart Width" description="Chart Width DESC" />
+		<param name="chart_height" default="100" size="10" type="text" label="Chart Height" description="Chart Height DESC" />
+		<param name="display_per" type="list" default="1" label="Display Percentage" description="Display Percentage DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="number_item" default="" size="10" type="text" label="Number of Items" description="Number of Items DESC" />
+		<param name="section_id" default="" size="10" type="text" label="Section ID" description="Section ID DESC" />
+	
+	</params>
+
+</install>

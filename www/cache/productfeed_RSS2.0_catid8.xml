@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="FeedCreator 1.7.3" -->
+<rss version="2.0">
+	<channel>
+		<title>Alfa Eletro - Latest Products from Category: Eletrolítico</title>
+		<description>VirtueMart Product Syndication</description>
+		<link>http://localhost</link>
+		<lastBuildDate>Wed, 11 Jan 2017 00:51:44 +0100</lastBuildDate>
+        <generator>FeedCreator 1.7.3</generator>
+		<image>
+			<url>http://localhost/components/com_virtuemart/shop_image/vendor/Alfa_Eletro_4a3cf5aecfcb0.png</url>
+			<title>Alfa Eletro</title>
+			<link>http://localhost</link>
+			<description>VirtueMart Product Syndication</description>
+		</image>
+		<item>
+			<title>Capacitor Eletrolítico 10uF/10V</title>
+			<link>http://localhost/index.php?product_id=18&amp;page=shop.product_details&amp;category_id=8&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=68</link>
+			<description>&lt;img src=&quot;http://localhost/components/com_virtuemart/shop_image/product/resized/Capacitor_Eletro_4a3d1f2155843_90x90.jpg&quot; alt=&quot;Capacitor Eletrolítico 10uF/10V&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Preço: 
+&lt;a href=&quot;index.php?page=shop.ask&amp;amp;product_id=18&amp;amp;subject=Contate+para+Pre%C3%A7o%3A+Capacitor+Eletrol%26Atilde%3B%26shy%3Btico+10uF%2F10V&amp;amp;option=com_virtuemart&amp;amp;Itemid=68&quot;&gt;Contate para Preço&lt;/a&gt;
+
+
+</description>
+			<category>Eletrolítico</category>
+			<pubDate>Sat, 20 Jun 2009 14:34:41 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="FeedCreator 1.7.3" -->
+<rss version="2.0">
+	<channel>
+		<title>Alfa Eletro - Latest Products from Category: Cabos</title>
+		<description>VirtueMart Product Syndication</description>
+		<link>http://localhost</link>
+		<lastBuildDate>Wed, 11 Jan 2017 00:50:53 +0100</lastBuildDate>
+        <generator>FeedCreator 1.7.3</generator>
+		<image>
+			<url>http://localhost/components/com_virtuemart/shop_image/vendor/Alfa_Eletro_4a3cf5aecfcb0.png</url>
+			<title>Alfa Eletro</title>
+			<link>http://localhost</link>
+			<description>VirtueMart Product Syndication</description>
+		</image>
+		<item>
+			<title>Lixo de Produto</title>
+			<link>http://localhost/index.php?product_id=19&amp;page=shop.product_details&amp;category_id=6&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=68</link>
+			<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ultrices sodales. Pellentesque placerat nunc velit, quis placerat est. Donec non lacus sapien. Fusce fermentum pellentesque ante et ullamcorper. Curabitur rhoncus orci sit amet magn&lt;img src=&quot;http://localhost/components/com_virtuemart/shop_image/product/&quot; alt=&quot;Lixo de Produto&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Preço: 
+&lt;a href=&quot;index.php?page=shop.ask&amp;amp;product_id=19&amp;amp;subject=Contate+para+Pre%C3%A7o%3A+Lixo+de+Produto&amp;amp;option=com_virtuemart&amp;amp;Itemid=68&quot;&gt;Contate para Preço&lt;/a&gt;
+
+
+</description>
+			<category>Cabos</category>
+			<pubDate>Sat, 20 Jun 2009 15:14:45 +0100</pubDate>
+		</item>
+		<item>
+			<title>Produto Teste</title>
+			<link>http://localhost/index.php?product_id=17&amp;page=shop.product_details&amp;category_id=6&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=68</link>
+			<description>Descrição do produto de teste.&lt;img src=&quot;http://localhost/components/com_virtuemart/shop_image/product/resized/Produto_Teste_4a3bbf611cf87_90x90.jpg&quot; alt=&quot;Produto Teste&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Preço: 
+&lt;a href=&quot;index.php?page=shop.ask&amp;amp;product_id=17&amp;amp;subject=Contate+para+Pre%C3%A7o%3A+Produto+Teste&amp;amp;option=com_virtuemart&amp;amp;Itemid=68&quot;&gt;Contate para Preço&lt;/a&gt;
+
+
+</description>
+			<category>Cabos</category>
+			<pubDate>Sun, 14 Jun 2009 01:44:47 +0100</pubDate>
+		</item>
+		<item>
+			<title>Mais Um Teste</title>
+			<link>http://localhost/index.php?product_id=36&amp;page=shop.product_details&amp;category_id=6&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=68</link>
+			<description>Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao curta Descricao &lt;img src=&quot;http://localhost/components/com_virtuemart/shop_image/product/resized/Mais_Um_Teste_4a432ba235ca8_90x90.jpg&quot; alt=&quot;Mais Um Teste&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Preço: 
+&lt;a href=&quot;index.php?page=shop.ask&amp;amp;product_id=36&amp;amp;subject=Contate+para+Pre%C3%A7o%3A+Mais+Um+Teste&amp;amp;option=com_virtuemart&amp;amp;Itemid=68&quot;&gt;Contate para Preço&lt;/a&gt;
+
+
+</description>
+			<category>Cabos</category>
+			<pubDate>Thu, 25 Jun 2009 04:21:06 +0100</pubDate>
+		</item>
+		<item>
+			<title>Novo Produto</title>
+			<link>http://localhost/index.php?product_id=20&amp;page=shop.product_details&amp;category_id=6&amp;flypage=flypage.tpl&amp;option=com_virtuemart&amp;Itemid=68</link>
+			<description>fdsafdsa&lt;img src=&quot;http://localhost/components/com_virtuemart/shop_image/product/resized/Novo_Produto_4a3d2aad0cd9a_90x90.jpg&quot; alt=&quot;Novo Produto&quot; vspace=&quot;5&quot; hspace=&quot;5&quot; align=&quot;left&quot; border=&quot;0&quot; /&gt;&lt;br /&gt;Preço: 
+&lt;a href=&quot;index.php?page=shop.ask&amp;amp;product_id=20&amp;amp;subject=Contate+para+Pre%C3%A7o%3A+Novo+Produto&amp;amp;option=com_virtuemart&amp;amp;Itemid=68&quot;&gt;Contate para Preço&lt;/a&gt;
+
+
+</description>
+			<category>Cabos</category>
+			<pubDate>Sat, 20 Jun 2009 15:30:05 +0100</pubDate>
+		</item>
+	</channel>
+</rss>

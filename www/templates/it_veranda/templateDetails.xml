@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<install version="1.5" type="template">
+	<name>it_veranda</name>
+	<version>1.0</version>
+	<creationDate>01/03/09</creationDate>
+	<author>IceTheme</author>
+	<authorEmail>webmaster@jsharing.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	<copyright>Copyright 2008-2009 - IceTheme.com</copyright>
+    <license>Proprietary - IceTheme Club Members Usage Only</license>
+	<description><![CDATA[
+<div>
+<h3>IT Veranda- By IceTheme</h3>
+
+<span style="color: #ff0000;"><b>Note: This template can be used ONLY by members of the IceTheme club. Please see our <a href="http://icetheme.com/Terms-of-Use.html">Terms of Use</a> for More Information</b></span>
+<br /><br />IceTheme website<br /><a href="http://www.icetheme.com/">http://www.icetheme.com</a>
+<br /><br />IceTheme Demo<br /><a href="http://demo.icetheme.com/">http://demo.icetheme.com</a>.
+</div>
+
+<h3>Changelog</h3>
+			
+			<ul>
+			<li>Initial Release</li>
+			</ul>
+			
+]]></description>
+	
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css/</folder>
+		<folder>html/</folder>
+		<folder>icetools/</folder>
+		<folder>images/</folder>
+		<folder>js/</folder>
+	</files>
+	
+	<positions>
+		<position>mainmenu</position>
+		<position>othermenu</position>
+		<position>footermenu</position>
+		<position>breadcrumbs</position>
+		<position>footer</position>
+		<position>login</position>
+		<position>left</position>
+		<position>right</position>
+		<position>content1</position>
+		<position>content2</position>
+		<position>content3</position>
+		<position>content4</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>promo1</position>
+		<position>promo2</position>
+		<position>promo3</position>
+		<position>promo4</position>
+		<position>promo5</position>
+		<position>promo6</position>
+		<position>module1</position>
+		<position>module2</position>
+		<position>module3</position>
+		<position>module4</position>
+		<position>module5</position>
+		<position>module6</position>
+		<position>module7</position>
+		<position>module8</position>
+		<position>module9</position>
+		<position>bottom1</position>
+		<position>bottom2</position>
+		<position>bottom3</position>
+		<position>bottom4</position>
+		<position>bottom5</position>
+		<position>bottom6</position>
+		<position>banner</position>
+		<position>icescroller</position>
+		<position>tabularslide</position>
+		<position>carouselslide</position>
+		<position>iceslideshow</position>
+		<position>search</position>
+		<position>debug</position>
+	</positions>
+	
+	
+	
+	<params>
+		<param name="TemplateStyle" type="list" default="style1" label="Template Style" description="The Main Color Variation for the Template">
+			<option value="style1">Style 1</option>
+			<option value="style2">Style 2</option>
+			<option value="style3">Style 3</option>
+			<option value="style4">Style 4</option>
+		</param>
+
+		<param name="layout_leftcol_width" type="text" default="192" label="Left Column Width"  description="The width for the Left Column (position=left)" />
+		
+		<param name="layout_rightcol_width" type="text" default="192" label="Right Column Width"  description="The width for the Right Column (position=right)" />
+		
+		<param name="layout_leftcol_bordercolor" type="text" default="ffffff" label="Left Column Border Color"  description="The border color for the Left Column (position=left). NOTE: To remove it simply put the same color as the background color" />
+		
+		<param name="layout_rightcol_bordercolor" type="text" default="ffffff" label="Right Column Border Color"  description="The border color for the Right Column (position=right).  NOTE: To remove it simply put the same color as the background color" />
+		
+		<param name="FontSize" type="list" default="normal" label="Font Size" description="Default Font Size for the template">
+			<option value="small">Small</option>
+			<option value="medium">Medium</option>
+			<option value="large">Large</option>
+		</param>
+				
+		<param name="FontSwitcher" type="radio" default="1" label="Font Switcher" description="Enalbe or Disalbe Font Switcher (Accessibility Feature) ">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="CurrentDate" type="radio" default="1" label="Show Date" description="Do you want to display the current date on the top right of the page">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<!-- MsinMenu -->
+				<param name="mainnav_oneline" type="radio" default="1" label="Main Menu Style" description="Set the style for the Main Menu. One lines is a normal menu and Two lines is what you see at the demo">
+			<option value="1">One Line</option>
+			<option value="0">Two Lines</option>
+		</param>
+			
+			<param name="mainnav_id" type="text" default="nav" label="Menu Id"  description="Enter the id for the menu which should corresponds with id on the main menu module on the module manager" />
+
+			<param name="mainnav_effect" type="list" default="slide and fade" label="SubMenu Effect" description="Select from the dropdown list the effect which you want to see for the subemenu items when they will be opened">
+			<option value="fade">Fade</option>
+			<option value="slide">Slide</option>
+			<option value="slide and fade">Slide and Fade</option>
+			<option value="null">No Effect</option>
+			</param>
+		<param name="mainnav_duration" type="text" default="600" label="Duration (ms)"  description="The speed in miliseconds on which the submenu effect menu will be run" />
+		<param name="mainnav_transition" type="list" default="Quad.easeOut" label="Transition Effect" description="Select a Transmition Effect for the MainMenu">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Pow.easeOut">Pow.easeOut</option>
+			<option value="Pow.easeIn">Pow.easeIn</option>
+			<option value="Pow.easeInOut">Pow.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		<param name="mainnav_delay" type="text" default="1000" label="Delay (ms)"  description="How long in miliseconds do you want the submenu to disaper after the mouse pointer is off" />
+		<param name="mainnav_orientation" type="list" default="horizontal" label="Orientation" description="Select the default orientation for the submenu items of the MainMenu module">
+			<option value="horizontal">Horizontal</option>
+			<option value="vertical">Vertical</option>
+		</param>
+		<param name="mainnav_direction_x" type="list" default="right" label="Horizontal Direction"  description="The Horizontal position for the submenus relative to its parent item" >
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="mainnav_direction_y" type="list" default="down" label="Vertical Direction"  description="The Vertical position for the submenus relative to its parent item" >
+			<option value="up">Up</option>
+			<option value="down">Down</option>
+		</param>
+		<param name="mainnav_opacity" type="text" default="90" label="Opacity (%)"  description="Enter the opacity for the submenu items for the MainMenu in percentage"/>
+		
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<!-- OtherMenu -->
+			<param name="othermenu_height" type="text" default="325" label="OtherMenu Height"  description="Enter here the height of your OtherMenu module" />
+
+<param name="othermenu_id" type="text" default="othermenu" label="Menu Id"  description="Enter the id for the menu which should corresponds with id on the main menu module on the module manager" />
+
+			<param name="othermenu_effect" type="list" default="slide and fade" label="SubMenu Effect" description="Select from the dropdown list the effect which you want to see for the subemenu items when they will be opened">
+			<option value="fade">Fade</option>
+			<option value="slide">Slide</option>
+			<option value="slide and fade">Slide and Fade</option>
+			<option value="null">No Effect</option>
+			</param>
+		<param name="othermenu_duration" type="text" default="600" label="Duration (ms)"  description="The speed in miliseconds on which the submenu effect menu will be run" />
+		<param name="othermenu_transition" type="list" default="Quad.easeOut" label="Transition Effect" description="Select a Transmition Effect for the MainMenu">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Pow.easeOut">Pow.easeOut</option>
+			<option value="Pow.easeIn">Pow.easeIn</option>
+			<option value="Pow.easeInOut">Pow.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		<param name="othermenu_delay" type="text" default="1000" label="Delay (ms)"  description="How long in miliseconds do you want the submenu to disaper after the mouse pointer is off" />
+		<param name="othermenu_orientation" type="list" default="horizontal" label="Orientation" description="Select the default orientation for the submenu items of the MainMenu module">
+			<option value="horizontal">Horizontal</option>
+			<option value="vertical">Vertical</option>
+		</param>
+		<param name="othermenu_delay" type="text" default="1000" label="Delay (ms)"  description="How long in miliseconds do you want the submenu to disaper after the mouse pointer is off" />
+		<param name="othermenu_direction_x" type="list" default="right" label="Horizontal Direction"  description="The Horizontal position for the submenus relative to its parent item" >
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="othermenu_direction_y" type="list" default="down" label="Vertical Direction"  description="The Vertical position for the submenus relative to its parent item" >
+			<option value="up">Up</option>
+			<option value="down">Down</option>
+		</param>
+		<param name="othermenu_opacity" type="text" default="90" label="Opacity (%)"  description="Enter the opacity for the submenu items for the MainMenu in percentage"/>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+
+		
+				
+		<param name="gotop" type="radio" default="1" label="Display Go Top" description="Enalbe or Disable the link with an arrow image on the footer which can direct you to the top of the page">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		
+		<param name="gotop_transition" type="list" default="linear" label="Go Top Transition Effect" description="Select a Transmition Effect for Go to Top link on the footer">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Pow.easeOut">Pow.easeOut</option>
+			<option value="Pow.easeIn">Pow.easeIn</option>
+			<option value="Pow.easeInOut">Pow.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		
+		<param name="gotop_duration" type="text" default="1500" label="Go Top Animation Duration (ms)" description="How fast do you want want the animation to run" />
+				
+				
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+
+		<param name="icelogo" type="radio" default="1" label="IceTheme Logo" description="Do you want to display the IceTheme logo on the bottom left of the site">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="gzip" type="radio" default="1" label="Gzip Compression" description="Do you want to enable gzip compression for Javascript and Css (Some host dont have gzip module enabled, If see that your site is not loading css and js please disable this parameter.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		
+	</params>
+</install>

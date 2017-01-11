@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>IceSlideshow</name>
+	<author>IceTheme</author>
+	<creationDate>September 2008</creationDate>
+	<copyright>Copyright (C) 2008 IceTheme</copyright>
+	<license>Copyrighted Commercial Software</license>
+	<authorEmail>webmaster@jsharing.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	<version>2.1</version>
+	<description>The IceSlideShow module display your images in a smooth and smart way. Brought to you by IceTheme</description>
+	
+	<files>
+		<filename module="mod_ice_slideshow">mod_ice_slideshow.php</filename>
+		<filename>mod_ice_slideshow.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>js/</folder>	
+		<folder>css/</folder>	
+	</files>
+	
+	<params>
+		
+		<param name="IceSlideshow_hu" type="text" default="images/icetheme/iceslideshow/" label="Images Path" description="Path to the image directory, relative or absolute, default is the root directory of the website, use an empty string for the same directory as the webpage" size="60" />
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+			
+		<param name="IceSlideshow_width" type="text" default="300" label="Width (px)" description="The width for the SlideShow "  size="10"/>
+		
+		<param name="IceSlideshow_height" type="text" default="200" label="Height (px)" description="The height for the SlideShow"   size="10"/>
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		
+		<param name="IceSlideshow_thumbnails" type="list" default="1" label="Thumbnails" description="The small images that apper on the bottom or on the right of the slideshow.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_thumbnails_position" type="list" default="top-inside" label="Thumbnails Positions" description="When do you want the image thumbnails to appear.">
+			<option value="top">Top</option>
+			<option value="top-inside">Top Inside</option>
+			<option value="bottom">Bottom</option>
+			<option value="bottom-inside">Bottom Inside</option>
+			<option value="left">Left</option>
+			<option value="left-inside">Left Inside</option>
+			<option value="right">Right</option>
+			<option value="right-inside">Right Inside</option>
+		</param>
+		
+		<param name="IceSlideshow_thumbnails_width" type="text" default="80" label="Thumbnails Width (px)" description="The width for the small images that apper next to the images (Thumbnails)"   size="10"/>
+		
+		<param name="IceSlideshow_thumbnails_height" type="text" default="40" label="Thumbnails Height (px)" description="The height for the small images that apper next to the images (Thumbnails)"   size="10"/>
+		
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		
+		<param name="IceSlideshow_captions" type="list" default="1" label="Captions" description="The captions will show when an image change on the bottom of the image. Caption text is the article title.  ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+			
+		<param name="IceSlideshow_controller" type="list" default="1" label="Controllers" description="The controllers are the image options that apper when you move the mouse over the image, like previous, next, play, pause ect.  ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		
+		
+				
+		<param name="IceSlideshow_fast" type="list" default="1" label="Fast" description=" The slideshow will not wait until the current transition completes, but update the slide change instantly. ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_linked" type="list" default="1" label="Linked" description=" Whether the class should automatically link each slide to the fullsize image, useful when mashing Slideshow with Slimbox, Lightbox, etc. ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_overlap" type="list" default="1" label="Overlap" description="Whether images overlap in the basic show, or if the first image transitions out before the second transitions in ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_random" type="list" default="0" label="Random" description="The SlideShow dont change the images using an order, bur rather on a random way (Very cool!). ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_center" type="list" default="1" label="Center" description=" Whether the SlideShow should attempt to center images to fit the width/height used. ">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="IceSlideshow_resize" type="list" default="width" label="Resize" description="Whether the SlideShow should attempt to resize images, based on the width side or height side. ">
+			<option value="width">Width</option>
+			<option value="height">Height</option>
+		</param>
+				
+		<param name="IceSlideshow_transition" type="list" default="linear" label="Transition" description="Select the transition effect that you would like to see when the image change.">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		
+		
+		<param name="IceSlideshow_slide" type="text" default="0" label="Slide (ms)" description="Enter the image number that you would like to see first when the IceSlideShow start. "  size="4" />
+		
+		<param name="IceSlideshow_delay" type="text" default="2000" label="Delay (ms)" description="The delay between slide changes in milliseconds (1000 = 1 second)."  size="10" />
+		
+		<param name="IceSlideshow_duration" type="text" default="750" label="Duration (ms)" description="The duration of the effect in milliseconds (1000 = 1 second)." size="10" />
+		
+				
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+				
+		
+		<param name="catid" type="category" default="0" label="Category Items" description="Assign a Category to display Items" />
+
+		<param name="order" type="list" default="o_asc" label="Article Ordering" description="Select the order for Articles">
+			<option value="o_asc">Article Order</option>
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="h_dsc">Most Popular</option>			
+			<option value="random">Randomize</option>
+	  	</param>
+		
+		<param name="items" type="text" default="4" label="Number of Items" description="How many items do you want to display?"    size="10"/>
+
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Add a Suffix to IceCarousel Module" />
+		
+	</params>
+	
+	<params group="advanced">
+	
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

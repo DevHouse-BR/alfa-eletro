@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params addpath="/administrator/components/com_phocadownload/elements">
+	
+		<param name="@phocahead" type="phocahead" default="DOWNLOAD SETTINGS LABEL" />
+		
+		<param name="filename_or_name" type="list" default="filename" label="Filename or Name" description="Filename or Name DESC">
+				<option value="filename">File Name</option>
+				<option value="title">Title</option>
+				<option value="filenametitle">File Name and Title</option>
+			</param>
+		
+		<param name="download_external_link" type="list" default="_self" label="External Download Link" description="External Download Link DESC">
+				<option value="_self">Self</option>
+				<option value="_blank">Blank</option>
+			</param>
+			
+		<param name="display_downloads" type="list" default="0" label="Display Downloads" description="Display Downloads DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_description" type="list" default="3" label="Display Description" description="Display Description DESC">
+				<option value="0">None</option>
+				<option value="1">Top</option>
+				<option value="2">Bottom</option>
+				<option value="3">Overlib</option>
+				<option value="4">Top and Overlib</option>
+				<option value="5">Bottom and Overlib</option>
+				<option value="6">Top with Detail and Overlib</option>
+				<option value="7">Bottom with Detail and Overlib</option>
+			</param>
+			
+		<param name="display_detail" type="list" default="1" label="Display Detail Button" description="Display Detail Button DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="display_new" default="0" size="10" type="phocatext" label="Display New Icon" description="Display New Icon DESC" />
+		<param name="display_hot" default="0" size="10" type="phocatext" label="Display Hot Icon" description="Display Hot Icon DESC" />
+		
+		<param name="display_most_download" type="list" default="1" label="Display Most Download Files" description="Display Most Download Files DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+			
+			
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="section_ordering" type="list" default="1" label="Section Ordering" description="Section Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="category_ordering" type="list" default="1" label="Category Ordering" description="Category Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="file_ordering" type="list" default="1" label="File Ordering" description="File Ordering DESC">
+			<option value="1">Ordering ASC</option>
+			<option value="2">Ordering DESC</option>
+			<option value="3">Title ASC</option>
+			<option value="4">Title DESC</option>
+			<option value="5">Date ASC</option>
+			<option value="6">Date DESC</option>
+			<option value="7">Id ASC</option>
+			<option value="8">Id DESC</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="default_pagination" default="20" size="18" type="phocatext" label="Default Value Pagination" description="Default Value Pagination DESC" />
+		
+		<param name="pagination" default="5;10;15;20;50" size="18" type="phocatext" label="Phoca Download Pagination" description="Phoca Download Pagination DESC" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+			
+		<param name="@phocahead" type="phocahead" default="THEME SETTINGS LABEL" />	
+			
+		<param name="theme" type="list" default="phocadownload-rc" label="Theme" description="Theme DESC">
+				<option value="phocadownload-grey">Grey</option>
+				<option value="phocadownload-red">Red</option>
+				<option value="phocadownload-blue">Blue</option>
+				<option value="phocadownload-blue-rc">Blue RC</option>
+			</param>
+			
+		<param name="@phocahead" type="phocahead" default="SECTIONS SETTINGS LABEL" />
+			
+		<param name="display_num_doc_secs" type="list" default="0" label="Display Num Doc Sections" description="Display Num Doc Sections DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+		<param name="display_num_doc_secs_header" type="list" default="1" label="Display Num Doc Sections Header" description="Display Num Doc Sections Header DESC">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			
+		<param name="@phocahead" type="phocahead" default="FILE SETTINGS LABEL" />
+			
+		<param name="license_box_height" default="300" size="10" type="phocatext" label="License Box Height" description="License Box Height DESC" />
+
+	</params>
+</config>

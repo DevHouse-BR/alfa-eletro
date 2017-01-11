@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Comercial</title>
+		<description>Comércio de produtos eletro-eletrônicos</description>
+		<link>http://localhost/index.php?option=com_contact&amp;view=category&amp;catid=101&amp;Itemid=269</link>
+		<lastBuildDate>Wed, 11 Jan 2017 02:52:30 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>pt-br</language>
+		<managingEditor>contato@alfaeletro.com.br (ALFA ELETRO)</managingEditor>
+		<item>
+			<title>Jeferson</title>
+			<link>http://localhost/index.php?option=com_contact&amp;view=contact&amp;id=2%3Ajeferson&amp;catid=101%3Acomercial&amp;Itemid=269</link>
+			<guid>http://localhost/index.php?option=com_contact&amp;view=contact&amp;id=2%3Ajeferson&amp;catid=101%3Acomercial&amp;Itemid=269</guid>
+			<description><![CDATA[Departamento Comercial - msn:]]></description>
+			<category>Comercial</category>
+		</item>
+		<item>
+			<title>Thompson</title>
+			<link>http://localhost/index.php?option=com_contact&amp;view=contact&amp;id=3%3Athompson&amp;catid=101%3Acomercial&amp;Itemid=269</link>
+			<guid>http://localhost/index.php?option=com_contact&amp;view=contact&amp;id=3%3Athompson&amp;catid=101%3Acomercial&amp;Itemid=269</guid>
+			<description><![CDATA[Departamento Comercial - ]]></description>
+			<category>Comercial</category>
+		</item>
+	</channel>
+</rss>

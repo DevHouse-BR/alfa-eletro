@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+	<name>Visitors Counter Revised by M.Majunke</name>
+	<creationDate>2009-04-28</creationDate>
+	<author>Majunke Michael</author>
+	<authorEmail>majunke@mmajunke.de</authorEmail>
+	<authorUrl>http://www.mmajunke.de/</authorUrl>
+	<copyright>Copyright (C) 2009 Majunke Michael. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<version>1.9.9</version>
+	<description><![CDATA[
+		<h3>Visitors Counter - by Majunke Michael</h3>
+		<p>Release date: <b>$Date: 2009-04-28 19:07:44 +0200 (Di, 28. Apr 2009) $</b></p>
+		<p>Homepage: <b><a href="http://www.mmajunke.de" title="www.mmajunke.de" target="_blank">http://www.mmajunke.de/</a></b></p>
+		<p>This module shows you the visitors of your site.</p>
+		<small>It is based on Vinaora Visitors Counter and extends this to a lot more features. The source code has been completely rewritten.</small>
+		<p>
+	    License Information Since 1.9.3 :<br/>
+	       If you would use the IP-Flags/IP-Country Features, read license information
+           from http://ip-to-country.webhosting.info !
+		</p>
+	]]></description>
+	<files>
+		<filename module="mod_vvisit_counter">index.html</filename>
+		<filename module="mod_vvisit_counter">mod_vvisit_counter.php</filename>
+		<filename module="mod_vvisit_counter">helper.php</filename>
+		<filename module="mod_vvisit_counter">diagram.php</filename>
+		<filename module="mod_vvisit_counter">readme.html</filename>
+		<filename module="mod_vvisit_counter">mvc.css</filename>
+		<filename module="mod_vvisit_counter">upgardeDatabasefrom1_8_versions.sql</filename>
+		<filename module="mod_vvisit_counter">ipcountry/index.html</filename>
+		<filename module="mod_vvisit_counter">ipcountry/iptocountry.php</filename>
+		<filename module="mod_vvisit_counter">ipcountry/ip-to-country.csv</filename>
+		<filename module="mod_vvisit_counter">ipcountry/info.txt</filename>
+		<filename module="mod_vvisit_counter">tmpl/index.html</filename>
+		<filename module="mod_vvisit_counter">tmpl/default.php</filename>
+		<filename module="mod_vvisit_counter">images/index.html</filename>
+		<filename module="mod_vvisit_counter">images/blue/index.html</filename>
+		<filename module="mod_vvisit_counter">images/boxes/index.html</filename>
+		<filename module="mod_vvisit_counter">images/italic/index.html</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/index.html</filename>
+		<filename module="mod_vvisit_counter">images/nixie/index.html</filename>
+		<filename module="mod_vvisit_counter">images/slot/index.html</filename>
+		<filename module="mod_vvisit_counter">images/blackold/index.html</filename>
+		<filename module="mod_vvisit_counter">images/greenold/index.html</filename>
+		<filename module="mod_vvisit_counter">images/flags/index.html</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_AZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BB.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BJ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_BZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CV.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_CZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DJ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_DZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_EC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_EE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_EG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ER.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ES.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ET.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FJ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_FO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GB.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GQ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_GY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_HN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_HK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_HR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_HT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_HU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ID.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IQ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_IT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_JM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_JO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_JP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_KZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LB.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LV.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_LY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ML.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MQ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MV.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MX.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_MZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_NZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_OM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_PY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_QA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_RE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_RO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_RU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_RW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SB.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SL.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ST.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SV.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_SZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TD.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TH.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TJ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TK.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TO.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TP.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TV.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TW.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_TZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_UA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_UG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_UNKNOWN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_US.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_UY.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_UZ.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VC.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VG.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VI.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VN.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_VU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_WF.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_WS.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_YE.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_YT.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_YU.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ZA.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ZM.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ZR.gif</filename>
+		<filename module="mod_vvisit_counter">images/flags/flag_ZW.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/blue/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/boxes/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/italic/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/mechanical/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/nixie/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/slot/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/greenold/W.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/0.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/1.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/2.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/3.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/4.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/5.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/6.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/7.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/8.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/9.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/dot.gif</filename>
+		<filename module="mod_vvisit_counter">images/blackold/W.gif</filename>
+		<filename module="mod_vvisit_counter">images/vtoday.gif</filename>
+		<filename module="mod_vvisit_counter">images/vyesterday.gif</filename>
+		<filename module="mod_vvisit_counter">images/vweek.gif</filename>
+		<filename module="mod_vvisit_counter">images/vmonth.gif</filename>
+		<filename module="mod_vvisit_counter">images/vall.gif</filename>
+	</files>
+
+    <languages>
+        <language tag="en-GB">language/en-GB.mod_vvisit_counter.ini</language>
+        <language tag="de-DE">language/de-DE.mod_vvisit_counter.ini</language>
+    </languages>
+
+	<params>
+		<!-- language from joomla -->
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="0">Never</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX"/>
+
+		<!-- Basisdaten-->
+		<param name="@spacer" type="spacer" default="" label="BASIC_SETTINGS_LBL" description="BASIC_SETTINGS_DESC"/>
+		<param name="s_countUserAsNewType" type="radio" default="0"  label="COUNT_AS_NEW_IP_LBL" description="COUNT_AS_NEW_IP_DESC">
+			<option value="1">DAILY_LBL</option>
+			<option value="0">LOCKTIME_EXPIRED_LBL</option>
+		</param>
+		<param name="locktime" type="text" default="15" label="LOCKTIME_LBL" description="LOCKTIME_DESC"/>
+		<param name="initialvalue" type="text" default="0" label="INITIAL_VALUE_LBL" description="INITIAL_VALUE_DESC"/>
+		<param name="records" type="text" default="100000" label="RECORDS_LBL" description="RECORDS_DESC"/>
+		<param name="s_trycreatetable" type="radio" default="1" label="CREATE_TABLE_LBL" description="CREATE_TABLE_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_createtableName" type="text" default="vvisitcounter" label="TABLE_NAME_LBL" description="TABLE_NAME_DESC"/>
+		<param name="read_only_counter" type="radio" default="0" label="READ_ONLY_LBL" description="READ_ONLY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<!-- IP Adresse anzeigen -->
+		<param name="@spacer" type="spacer" default="" label="CALLER_INFO_LBL" description="CALLER_INFO_DESC"/>
+		<param name="s_ip" type="radio" default="0" label="SHOP_IP_LBL" description="SHOP_IP_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="ip" type="text" default="" label="IP_PRE_TEXT_LBL" description="IP_PRE_TEXT_DESC"/>
+		<param name="ip_type" type="list" default="text" label="IP_DISPLAY_TYPE_LBL" description="IP_DISPLAY_TYPE_DESC">
+			<option value="mechanical">Mechanical</option>
+			<option value="nixie">Nixie</option>
+			<option value="blue">Blue</option>
+			<option value="slot">Slot</option>
+			<option value="boxes">Boxes</option>
+			<option value="italic">Italic</option>
+			<option value="blackold">OldBlack</option>
+			<option value="greenold">OldGreen</option>
+			<option value="text">SIMPLE_TEXT_LBL</option>
+			<option value="dispTypeMan">FOLDER_BELOW_LBL</option>
+		</param>
+		<param name="ip_type_man" type="text" default="text" label="IP_DISPLAY_TYPE_MAN_LBL" description="IP_DISPLAY_TYPE_MAN_DESC"/>
+		<param name="filterIPs" type="textarea" cols="20" rows="5"
+		       default="" label="FILTER_IP_S_LBL"
+		       description="FILTER_IP_S_DESC"/>
+		<param name="s_trycreateIPCtable" type="radio" default="0" label="CREATE_TABLE_IP_TO_COUNTRY_LBL"
+		       description="CREATE_TABLE_IP_TO_COUNTRY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_ipCcode" type="radio" default="0" label="SHOW_COUNTRY_CODE_LBL"
+		       description="SHOW_COUNTRY_CODE_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_ipCountry" type="radio" default="0" label="SHOW_COUNTRY_LBL"
+		       description="SHOW_COUNTRY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_ipCflag" type="radio" default="0" label="SHOW_COUNTRY_FLAG_LBL"
+		       description="SHOW_COUNTRY_FLAG_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_ipCflag_width" type="text" default="20" label="IPFLAG_WIDTH_LBL" description="IPFLAG_WIDTH_DESC"/>
+		<param name="s_ipCflag_height" type="text" default="13" label="IPFLAG_HEIGHT_LBL" description="IPFLAG_HEIGHT_DESC"/>
+		<param name="s_ipCLic" type="radio" default="1" label="APPEND_IP_LICENSE_LBL"
+		       description="APPEND_IP_LICENSE_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="IP2C LicenseText" type="text"
+		       default="&lt;p style=&quot;font-size:25%&quot;&gt;This page uses the IP-to-Country Database provided by WebHosting.Info (http://www.webhosting.info), available from http://ip-to-country.webhosting.info&lt;/p&gt;"
+		       label="APPEND_IP_LICENSE_TEXT_LBL"
+			   description="APPEND_IP_LICENSE_TEXT_DESC"/>
+		<!-- UserAgents / Robots-->
+		<param name="@spacer" type="spacer" default="" label="USER_AGENTS_ROBOTS_LBL" description="USER_AGENTS_ROBOTS_DESC"/>
+		<param name="s_autoFilterRobots" type="radio" default="0" label="AUTOFILTER_ROBOTS_LBL"
+		       description="AUTOFILTER_ROBOTS_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="filterUserAgents" type="textarea" cols="20" rows="5"
+		       default="" label="FILTER_USERAGENTS_LBL"
+		       description="FILTER_USERAGENTS_DESC"/>
+		<param name="saveUserAgents" type="radio" default="0" label="SAVE_USERAGENTS_LBL" description="SAVE_USERAGENTS_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<!-- Sortieren-->
+		<param name="@spacer" type="spacer" default="" label="SORT_VIEW_LBL" description="SORT_VIEW_DESC"/>
+		<param name="the_order" type="text" default="1;2;3;4;5;6;7;8;9" label="ORDER_LBL"
+		       description="ORDER_DESC"/>
+		<!-- People Table View-->
+		<param name="@spacer" type="spacer" default="" label="PEOPLE_TABLE_VIEW_LBL" description="PEOPLE_TABLE_VIEW_DESC"/>
+		<param name="s_translate_table_texts" type="radio" default="0"
+		       label="TRANSLATE_TABLE_TEXTS_LBL" description="TRANSLATE_TABLE_TEXTS_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_today" type="radio" default="1" label="SHOW_TODAY_LBL" description="SHOW_TODAY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="today" type="text" default="Today" label="TODAY_TEXT_LBL" description="TODAY_TEXT_DESC"/>
+		<param name="s_yesterday" type="radio" default="1" label="SHOW_YESTERDAY_LBL" description="SHOW_YESTERDAY_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="yesterday" type="text" default="Yesterday" label="YESTERDAY_TEXT_LBL" description="YESTERDAY_TEXT_DESC"/>
+		<param name="s_week" type="radio" default="1" label="SHOW_THIS_WEEK_LBL" description="SHOW_THIS_WEEK_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_week_startday" type="radio" default="1" label="THIS_WEEK_STARTDAY_LBL" description="THIS_WEEK_STARTDAY_DESC">
+			<option value="0">Sunday</option>
+			<option value="1">Monday</option>
+		</param>
+		<param name="week" type="text" default="This Week" label="THIS_WEEK_TEXT_LBL" description="THIS_WEEK_TEXT_DESC"/>
+		<param name="s_month" type="radio" default="1" label="SHOW_THIS_MONTH_LBL" description="SHOW_THIS_MONTH_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="month" type="text" default="This Month" label="THIS_MONTH_TEXT_LBL" description="THIS_MONTH_TEXT_DESC"/>
+		<param name="s_all" type="radio" default="1" label="SHOW_ALL_LBL" description="SHOW_ALL_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="all" type="text" default="All Days" label="SHOW_ALL_TEXT_LBL" description="SHOW_ALL_TEXT_DESC"/>
+		<param name="show_UsageImgs" type="radio" default="1" label="SHOW_IMAGES_P_LBL" description="SHOW_IMAGES_P_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<!-- Counter -->
+		<param name="@spacer" type="spacer" default="" label="COUNTER_VIEW_LBL" description="COUNTER_VIEW_DESC"/>
+		<param name="s_digit" type="radio" default="1" label="SHOW_DIGIT_COUNTER_LBL" description="SHOW_DIGIT_COUNTER_DESC">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="s_digits_min" type="text" default="6" label="MIN_DIGITS_LBL" description="MIN_DIGITS_DESC"/>
+		<param name="s_digits_max" type="text" default="6" label="MAX_DIGITS_LBL" description="MAX_DIGITS_DESC"/>
+		<param name="s_digits_warnimg" type="text" default="" label="OVERFLOW_DIGITS_IMAGEL_LBL" description="OVERFLOW_DIGITS_IMAGEL_DESC"/>
+		<param name="disp_type" type="list" default="text" label="DISPLAY_TYPE_LBL" description="DISPLAY_TYPE_DESC">
+			<option value="mechanical">Mechanical</option>
+			<option value="nixie">Nixie</option>
+			<option value="blue">Blue</option>
+			<option value="slot">Slot</option>
+			<option value="boxes">Boxes</option>
+			<option value="italic">Italic</option>
+			<option value="blackold">OldBlack</option>
+			<option value="greenold">OldGreen</option>
+			<option value="text">Simple Text</option>
+			<option value="dispTypeMan">FOLDER_BELOW_LBL</option>
+		</param>
+		<param name="disp_type_man" type="text" default="text" label="DISPLAY_TYPE_M_LBL" description="DISPLAY_TYPE_M_DESC"/>
+		<param name="widthtable" type="list" default="90" label="TABLE_WIDTH_LBL" description="TABLE_WIDTH_DESC">
+			<option value="100">100%</option>
+			<option value="95">95%</option>
+			<option value="90">90%</option>
+			<option value="85">85%</option>
+			<option value="80">80%</option>
+			<option value="75">75%</option>
+			<option value="70">70%</option>
+			<option value="65">65%</option>
+			<option value="60">60%</option>
+			<option value="55">55%</option>
+			<option value="50">50%</option>
+			<option value="45">45%</option>
+			<option value="40">40%</option>
+			<option value="35">35%</option>
+			<option value="30">30%</option>
+			<option value="25">25%</option>
+			<option value="20">20%</option>
+			<option value="15">15%</option>
+			<option value="10">10%</option>
+			<option value="5">5%</option>
+		</param>
+		<!-- Statistik Image -->
+		<param name="@spacer" type="spacer" default="" label="STAT_VIEW_LBL" description="STAT_VIEW_DESC"/>
+		<param name="image_create" type="list" default="0" label="SHOW_STAT_IMAGE_LBL" description="SHOW_STAT_IMAGE_DESC">
+			<option value="2">SHOW_DETAIL_LBL</option>
+			<option value="1">SHOW_LBL</option>
+			<option value="0">HIDE_LBL</option>
+		</param>
+		<param name="image_showDays" type="text" default="0" label="STAT_DAYS_LBL" description="STAT_DAYS_DESC"/>
+		<param name="image_path" type="text" default="/tmp/imagemvc.png" label="STAT_IMAGE_PATH_LBL" description="STAT_IMAGE_PATH_DESC"/>
+		<param name="image_newerAsHours" type="text" default="6" label="STAT_TIME_ELAPSE_LBL" description="STAT_TIME_ELAPSE_DESC"/>
+		<param name="image_sizeX" type="text" default="160" label="STAT_WIDTH_LBL" description="STAT_WIDTH_DESC"/>
+		<param name="image_sizeY" type="text" default="90" label="STAT_IMAGE_HEIGHT_LBL" description="STAT_IMAGE_HEIGHT_DESC"/>
+		<param name="image_lineColor" type="text" default="#000000" label="STAT_IMG_LINE_COLOR_LBL" description="STAT_IMG_LINE_COLOR_DESC"/>
+		<param name="image_dia_bgColor" type="text" default="#DDDDDD" label="STAT_IMG_BGCOLOR_LBL" description="STAT_IMG_BGCOLOR_DESC"/>
+		<param name="image_dia_RandColor" type="text" default="#FF0000" label="STAT_IMG_BORDER_COLOR_LBL" description="STAT_IMG_BORDER_COLOR_DESC"/>
+		<!-- Pre and Post -->
+		<param name="@spacer" type="spacer" default="" label="PRE_AND_POST_LBL" description="PRE_AND_POST_DESC"/>
+		<param name="pretext" type="textarea" cols="20" rows="5" default="" label="PRE_TEXT_LBL" description="PRE_TEXT_DESC"/>
+		<param name="posttext" type="textarea" cols="20" rows="5" default="" label="POST_TEXT_LBL" description="POST_TEXT_DESC"/>
+	</params>
+
+</install>

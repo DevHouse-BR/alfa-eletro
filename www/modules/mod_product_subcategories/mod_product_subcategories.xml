@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5.0">
+	<name>VirtueMart Menu de Sub-Categorias</name>
+	<creationDate>Junho de 2009</creationDate>
+	<author>Leonardo Lima de Vasconcellos</author>
+	<authorEmail>leonardo@devhouse.com.br</authorEmail>
+	<authorUrl>http://www.devhouse.com.br</authorUrl>
+	<copyright>
+		Copyright (C) 2009 Devhouse. All rights reserved.
+	</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>Mostra as subcategorias de produtos de uma determinada categoria pai.</description>
+	<files>
+		<filename module="mod_product_categories">mod_product_categories.php</filename>
+	</files>
+	<params>
+		<param name="cache" type="radio" default="0"
+			label="Enable Cache"
+			description="Select whether to cache the content of this module">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default=""
+			label="Module Class Suffix"
+			description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="class_sfx" type="text" default=""
+			label="Menu Class Suffix"
+			description="A suffix to be applied to the css class of the menu items" />
+	</params>
+</install>

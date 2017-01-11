@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>IceSlider</name>
+	<author>IceTheme</author>
+	<creationDate>May 2008</creationDate>
+	<copyright>Copyright (C) 2008 IceTheme</copyright>
+	<license>Copyrighted Commercial Software</license>
+	<authorEmail>webmaster@jsharing.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	<version>1.0</version>
+	<description>IceSlider Module is ONLY for IceTheme Club Members and can be used ONLY for IceTheme Templates</description>
+	
+	<files>
+		<filename module="mod_ice_slider">mod_ice_slider.php</filename>
+		<filename>mod_ice_slider.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+		<folder>js/</folder>		
+	</files>
+	
+	<params>
+	
+		<param name="style" type="list" default="tabularslide" label="IceSlider Layout" description="The main layout for IceSlider">
+			<option value="tabularslide">Tabs (default)</option>
+			<option value="imageslide">Image Slide</option>
+			<option value="carouselslide">Carousel Slide</option>
+		</param>
+			
+		<param name="iceslider_width" type="text" default="540" label="Slider Width (px)" description="Enter the width only for the main content of the slider " />
+		
+		<param name="iceslider_item_width" type="text" default="180" label="Item Width (px)" description="Enter the width only for one item." />
+		
+		<param name="iceslider_height" type="text" default="230" label="Slider Height (px)" description="Enter the height only for the main content of the slider " />
+		
+		<param name="animation_duration" type="text" default="1000" label="Animation Duration (ms)" description="How fast do you want a slide to be changed?" />
+		
+		<param name="animation_interval" type="text" default="3000" label="Animation Interval" description="Animation Interval Speed" />
+		
+		<param name="animation_transition" type="list" default="linea" label="Transition Effect" description="Select a Transmition Effect for changing Items">
+			<option value="linear">linear</option>
+			<option value="Quad.easeOut">Quad.easeOut</option>
+			<option value="Quad.easeIn">Quad.easeIn</option>
+			<option value="Quad.easeInOut">Quad.easeInOut</option>
+			<option value="Cubic.easeOut">Cubic.easeOut</option>
+			<option value="Cubic.easeIn">Cubic.easeIn</option>
+			<option value="Cubic.easeInOut">Cubic.easeInOut</option>
+			<option value="Quart.easeOut">Quart.easeOut</option>
+			<option value="Quart.easeIn">Quart.easeIn</option>
+			<option value="Quart.easeInOut">Quart.easeInOut</option>
+			<option value="Quint.easeOut">Quint.easeOut</option>
+			<option value="Quint.easeIn">Quint.easeIn</option>
+			<option value="Quint.easeInOut">Quint.easeInOut</option>
+			<option value="Expo.easeOut">Expo.easeOut</option>
+			<option value="Expo.easeIn">Expo.easeIn</option>
+			<option value="Expo.easeInOut">Expo.easeInOut</option>
+			<option value="Circ.easeOut">Circ.easeOut</option>
+			<option value="Circ.easeIn">Circ.easeIn</option>
+			<option value="Circ.easeInOut">Circ.easeInOut</option>
+			<option value="Sine.easeOut">Sine.easeOut</option>
+			<option value="Sine.easeIn">Sine.easeIn</option>
+			<option value="Sine.easeInOut">Sine.easeInOut</option>
+			<option value="Back.easeOut">Back.easeOut</option>
+			<option value="Back.easeIn">Back.easeIn</option>
+			<option value="Back.easeInOut">Back.easeInOut</option>
+			<option value="Bounce.easeOut">Bounce.easeOut</option>
+			<option value="Bounce.easeIn">Bounce.easeIn</option>
+			<option value="Bounce.easeInOut">Bounce.easeInOut</option>
+			<option value="Elastic.easeOut">Elastic.easeOut</option>
+			<option value="Elastic.easeIn">Elastic.easeIn</option>
+			<option value="Elastic.easeInOut">Elastic.easeInOut</option>
+		</param>
+		
+			
+			
+			<param name="autoplay" type="list" default="false" label="AutoPlay" description="Do you want to enable autoplay so the slides can change automatically.">
+				<option value="true">Yes</option>
+				<option value="false">No</option>
+			</param>
+			
+			<param name="animation_event" type="list" default="stop" label="On MouseOver Behaviour" description="How do you want to change items on Mouse Over or on Mouse Click (Applicable only for tabularslide)">
+				<option value="click">Mouse Click</option>
+				<option value="mouseenter">Mouse Over</option>
+			</param>
+			
+			<param name="slidesnr" type="text" default="1,2,3" label="Total Images" description="Please list images accordion to the following list (Applicable only for imageslide and carouselslide)" />
+			
+			<param name="iceslider_text" type="text" default="Inside IT Tribune" label="CarouselSlide Text" description="The text that you want to add below the content of the IceSlider (Applicable only for carouselslide)" size="50" />
+			
+			
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+				
+		
+		<param name="catid" type="category" default="0" label="Category Items" description="Assign a Category to display Items" />
+
+		<param name="order" type="list" default="o_asc" label="Article Ordering" description="Select the order for Articles">
+			<option value="o_asc">Article Order</option>
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="h_dsc">Most Popular</option>			
+			<option value="random">Randomize</option>
+	  	</param>
+		
+		<param name="items" type="text" default="4" label="Number of Items" description="How many items do you want to display?" />
+
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Add a Suffix to IceCarousel Module" />
+		
+	</params>
+	
+	<params group="advanced">
+	
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

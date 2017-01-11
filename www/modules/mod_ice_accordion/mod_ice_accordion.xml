@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>IceAccrordion</name>
+	<author>IceTheme</author>
+	<creationDate>April 2008</creationDate>
+	<copyright>Copyright (C) 2008 IceTheme</copyright>
+	<license>Copyrighted Commercial Software</license>
+	<authorEmail>webmaster@jsharing.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	<version>1.0</version>
+	<description>IceAccordion Module is ONLY for IceTheme Club Members and can be used ONLY for IceTheme Templates</description>
+	
+	<files>
+		<filename module="mod_ice_accordion">mod_ice_accordion.php</filename>
+		<filename>mod_ice_accordion.xml</filename>
+		<filename>helper.php</filename>
+		<filename>changelog.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl/</folder>
+	</files>
+	
+	<params>
+	
+		<param name="iceaccordion_inactivecolor" type="text" default="888" label="Link Color" description="Link color for the accordion toggler" />
+		
+		<param name="iceaccordion_activecolor" type="text" default="222" label="Link Color (Active Item)" description="Link color for the accordion toggler when it is selected" />
+		
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+				
+		
+		<param name="catid" type="category" default="0" label="Category Items" description="Assign a Category to display Items" />
+
+		<param name="order" type="list" default="o_asc" label="Article Ordering" description="Select the order for Articles">
+			<option value="o_asc">Article Order</option>
+			<option value="c_dsc">Recently Added First</option>
+			<option value="m_dsc">Recently Modified First</option>
+			<option value="h_dsc">Most Popular</option>			
+			<option value="random">Randomize</option>
+	  	</param>
+		
+		<param name="items" type="text" default="4" label="Number of Items" description="How many items do you want to display?" />
+
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+	
+			
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Add a Suffix to IceAccordion Module" />
+		
+	</params>
+	
+	<params group="advanced">
+	
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>
